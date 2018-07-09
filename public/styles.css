@@ -1,0 +1,10 @@
+/*.card {*/
+
+    /*max-height: 100px;*/
+    /*max-width: 50px;*/
+/*}*/
+#d2 {
+    position: sticky;
+    top: 10px;
+}
+/* Add rounded corners to the top left and the top right corner of the image */

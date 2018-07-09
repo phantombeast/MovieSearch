@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/styles.css">
+
+
+<!--<link rel="stylesheet" href="/styles.css">-->
+
+<a href="/" class="btn btn-primary" id="d2">Search Again</a>
+<% data['Search'].forEach(function (movie) { %>
+
+<!--<li><%=movie['Title']%></li>-->
+
+<div class="container">
+
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="<%=movie['Poster']%>" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title"><strong><%=movie['Title']%></strong></h4>
+            <p class="card-text">This is a <strong><%=movie['Type']%></strong></p>
+            <p> The Year of release is <%=movie['Year']%></p>
+            <p>IMDB ID is: <strong> <%=movie['imdbID']%></strong></p>
+        </div>
+    </div>
+    <br>
+
+<%})%>
+
+
